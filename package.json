@@ -1,0 +1,39 @@
+{
+  "name": "beepro-dancer-web",
+  "version": "0.0.1",
+  "description": "beepro web client",
+  "main": "lib/server.js",
+  "watch": {
+    "dev": "src/**/*.js"
+  },
+  "scripts": {
+    "build": "babel src -d lib",
+    "start": "node lib/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "npm run build && npm start",
+    "watch": "npm-watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/beepro/beepro-dancer-web.git"
+  },
+  "author": "nabuchi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/beepro/beepro-dancer-web/issues"
+  },
+  "homepage": "https://github.com/beepro/beepro-dancer-web#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "eslint": "^4.15.0",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.8.0",
+    "npm-watch": "^0.3.0"
+  },
+  "dependencies": {
+    "express": "^4.16.2",
+    "waggle-dance": "^1.0.6"
+  }
+}
